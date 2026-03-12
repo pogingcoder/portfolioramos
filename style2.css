@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #00c3ff;
+}
+
+.panel{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    animation: fadeIn 1s ease;
+}
+
+#frieren{
+    background-image: url('https://cdn.theanimegallery.com/theanimegallery/25bf6eb8-a9dd-4c6f-8e86-1079f0c02026-anime-forest-background.webp');
+}
+
+#fern{
+    background-image: url('https://cdn.theanimegallery.com/theanimegallery/f4afae97-1566-4f79-835e-c60d8cfb7dce-anime-forest-background.webp');
+}
+
+#himmel{
+    background-image: url('https://cdn.wallpapersafari.com/36/12/gElGpH.jpg');
+}
+
+#stark{
+    background-image: url('https://wallpapers-clan.com/wp-content/uploads/2024/06/enchanted-magical-forest-desktop-wallpaper-preview.jpg');
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+img{
+    transition: 0.5s;
+    width: 500px;
+	transition: 0,5s;
+}
+img:hover{
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px;
+}
